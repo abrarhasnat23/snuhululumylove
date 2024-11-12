@@ -1,44 +1,111 @@
 <!DOCTYPE html>
-<html lang="en"> <title><For My Love</title>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem Lyrics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Poem Lyrics</title> <!-- Updated Title -->
+    <style>
+        body {
+            background-color: #FADCD9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .poem-container {
+            color: #2c2c2c;
+            font-size: 24px;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .poem-container span {
+            display: block;
+            opacity: 0;
+            animation: appear 4s ease-out forwards;
+        }
+
+        /* Writing effect */
+        @keyframes appear {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .poem-container span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .poem-container span:nth-child(2) {
+            animation-delay: 2s;
+        }
+        .poem-container span:nth-child(3) {
+            animation-delay: 4s;
+        }
+        .poem-container span:nth-child(4) {
+            animation-delay: 6s;
+        }
+        .poem-container span:nth-child(5) {
+            animation-delay: 8s;
+        }
+        .poem-container span:nth-child(6) {
+            animation-delay: 10s;
+        }
+        .poem-container span:nth-child(7) {
+            animation-delay: 12s;
+        }
+        .poem-container span:nth-child(8) {
+            animation-delay: 14s;
+        }
+        .poem-container span:nth-child(9) {
+            animation-delay: 16s;
+        }
+        .poem-container span:nth-child(10) {
+            animation-delay: 18s;
+        }
+
+        /* Style for audio player */
+        .audio-player {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="poem">
-            <p class="line">I’m the sun, and you’re the moon.</p>
-            <p class="line">We’ve never met, but I think of you too soon.</p>
-            <p class="line">I wake up and feel you in the air,</p>
-            <p class="line">A quiet thought, as if you're always there.</p>
-            <p class="line">I glow a little brighter every day,</p>
-            <p class="line">Hoping somehow, you’ll find your way.</p>
-            <p class="line">You’re not here, but still, I smile,</p>
-            <p class="line">Like you're close, even if just for a while.</p>
-            <p class="line">I don’t know why, but my heart feels full,</p>
-            <p class="line">Like there’s a piece of you that fits me well.</p>
-            <p class="line">I catch myself wondering what it’d be,</p>
-            <p class="line">To share a laugh, to simply be.</p>
-            <p class="line">We’re like two stars in different skies,</p>
-            <p class="line">Shining brightly, but never quite in sight.</p>
-            <p class="line">I wait, and I wish, as days go by,</p>
-            <p class="line">For the chance to finally look you in the eye.</p>
-            <p class="line">But until then, I’ll keep dreaming,</p>
-            <p class="line">Of you and me, of something gleaming.</p>
-            <p class="line">Even if we never meet, you’ll always stay,</p>
-            <p class="line">A little thought that makes my day.</p>
-        </div>
+    <div class="poem-container">
+        <span>I’m the sun, and you’re the moon,</span>
+        <span>We’ve never met, but I think of you too soon.</span>
+        <span>I wake up and feel you in the air,</span>
+        <span>A quiet thought, as if you're always there.</span>
+        <span>I glow a little brighter every day,</span>
+        <span>Hoping somehow, you’ll find your way.</span>
+        <span>You’re not here, but still, I smile,</span>
+        <span>Like you're close, even if just for a while.</span>
+        <span>I don’t know why, but my heart feels full,</span>
+        <span>Like there’s a piece of you that fits me well.</span>
+        <span>I catch myself wondering what it’d be,</span>
+        <span>To share a laugh, to simply be.</span>
+        <span>We’re like two stars in different skies,</span>
+        <span>Shining brightly, but never quite in sight.</span>
+        <span>I wait, and I wish, as days go by,</span>
+        <span>For the chance to finally look you in the eye.</span>
+        <span>But until then, I’ll keep dreaming,</span>
+        <span>Of you and me, of something gleaming.</span>
+        <span>Even if we never meet, you’ll always stay,</span>
+        <span>A little thought that makes my day.</span>
     </div>
 
-    <audio autoplay loop>
-        <source src="hello.mp3" type="audio/mp3">
-    </audio>
-
-    <script src="script.js"></script>
+    <!-- Audio player -->
+    <div class="audio-player">
+        <audio controls autoplay>
+            <source src="hello.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </body>
 </html>
 

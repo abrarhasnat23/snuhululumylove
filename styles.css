@@ -1,4 +1,4 @@
-/* General Reset */
+//* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -41,32 +41,31 @@ h1 {
   font-family: 'Patrick Hand', cursive;
   color: #6a5acd;
   opacity: 0;
+  transform: translateY(10px);
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: calc(var(--order) * 0.5s);
   line-height: 1.5;
 }
 
-/* Sequential Delay for Each Line */
-.poem p:nth-child(1) { --order: 1; }
-.poem p:nth-child(2) { --order: 2; }
-.poem p:nth-child(3) { --order: 3; }
-.poem p:nth-child(4) { --order: 4; }
-.poem p:nth-child(5) { --order: 5; }
-.poem p:nth-child(6) { --order: 6; }
-.poem p:nth-child(7) { --order: 7; }
-.poem p:nth-child(8) { --order: 8; }
-.poem p:nth-child(9) { --order: 9; }
-.poem p:nth-child(10) { --order: 10; }
-.poem p:nth-child(11) { --order: 11; }
-.poem p:nth-child(12) { --order: 12; }
-.poem p:nth-child(13) { --order: 13; }
-.poem p:nth-child(14) { --order: 14; }
-.poem p:nth-child(15) { --order: 15; }
-.poem p:nth-child(16) { --order: 16; }
-.poem p:nth-child(17) { --order: 17; }
-.poem p:nth-child(18) { --order: 18; }
-.poem p:nth-child(19) { --order: 19; }
-.poem p:nth-child(20) { --order: 20; }
+.poem p:nth-child(1) { animation-delay: 0.5s; }
+.poem p:nth-child(2) { animation-delay: 1s; }
+.poem p:nth-child(3) { animation-delay: 1.5s; }
+.poem p:nth-child(4) { animation-delay: 2s; }
+.poem p:nth-child(5) { animation-delay: 2.5s; }
+.poem p:nth-child(6) { animation-delay: 3s; }
+.poem p:nth-child(7) { animation-delay: 3.5s; }
+.poem p:nth-child(8) { animation-delay: 4s; }
+.poem p:nth-child(9) { animation-delay: 4.5s; }
+.poem p:nth-child(10) { animation-delay: 5s; }
+.poem p:nth-child(11) { animation-delay: 5.5s; }
+.poem p:nth-child(12) { animation-delay: 6s; }
+.poem p:nth-child(13) { animation-delay: 6.5s; }
+.poem p:nth-child(14) { animation-delay: 7s; }
+.poem p:nth-child(15) { animation-delay: 7.5s; }
+.poem p:nth-child(16) { animation-delay: 8s; }
+.poem p:nth-child(17) { animation-delay: 8.5s; }
+.poem p:nth-child(18) { animation-delay: 9s; }
+.poem p:nth-child(19) { animation-delay: 9.5s; }
+.poem p:nth-child(20) { animation-delay: 10s; }
 
 /* Fade-in Keyframes */
 @keyframes fadeIn {
@@ -79,8 +78,6 @@ h1 {
     transform: translateY(0);
   }
 }
-
-
 
 
 

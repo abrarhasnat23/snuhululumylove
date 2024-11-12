@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #f5f0ff;
+  background: linear-gradient(to bottom right, #ffe0f0, #f5aaf9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +21,10 @@ body {
 .poem-container {
   text-align: center;
   max-width: 600px;
-  background-color: #fff0f5;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
 }
 
 /* Title Styling */
@@ -43,33 +41,32 @@ h1 {
   font-family: 'Patrick Hand', cursive;
   color: #6a5acd;
   opacity: 0;
-  transform: translateY(10px);
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: calc(var(--delay) * 0.5s);
+  animation-delay: calc(var(--order) * 0.5s);
   line-height: 1.5;
 }
 
 /* Sequential Delay for Each Line */
-.poem p:nth-child(1) { --delay: 1; }
-.poem p:nth-child(2) { --delay: 2; }
-.poem p:nth-child(3) { --delay: 3; }
-.poem p:nth-child(4) { --delay: 4; }
-.poem p:nth-child(5) { --delay: 5; }
-.poem p:nth-child(6) { --delay: 6; }
-.poem p:nth-child(7) { --delay: 7; }
-.poem p:nth-child(8) { --delay: 8; }
-.poem p:nth-child(9) { --delay: 9; }
-.poem p:nth-child(10) { --delay: 10; }
-.poem p:nth-child(11) { --delay: 11; }
-.poem p:nth-child(12) { --delay: 12; }
-.poem p:nth-child(13) { --delay: 13; }
-.poem p:nth-child(14) { --delay: 14; }
-.poem p:nth-child(15) { --delay: 15; }
-.poem p:nth-child(16) { --delay: 16; }
-.poem p:nth-child(17) { --delay: 17; }
-.poem p:nth-child(18) { --delay: 18; }
-.poem p:nth-child(19) { --delay: 19; }
-.poem p:nth-child(20) { --delay: 20; }
+.poem p:nth-child(1) { --order: 1; }
+.poem p:nth-child(2) { --order: 2; }
+.poem p:nth-child(3) { --order: 3; }
+.poem p:nth-child(4) { --order: 4; }
+.poem p:nth-child(5) { --order: 5; }
+.poem p:nth-child(6) { --order: 6; }
+.poem p:nth-child(7) { --order: 7; }
+.poem p:nth-child(8) { --order: 8; }
+.poem p:nth-child(9) { --order: 9; }
+.poem p:nth-child(10) { --order: 10; }
+.poem p:nth-child(11) { --order: 11; }
+.poem p:nth-child(12) { --order: 12; }
+.poem p:nth-child(13) { --order: 13; }
+.poem p:nth-child(14) { --order: 14; }
+.poem p:nth-child(15) { --order: 15; }
+.poem p:nth-child(16) { --order: 16; }
+.poem p:nth-child(17) { --order: 17; }
+.poem p:nth-child(18) { --order: 18; }
+.poem p:nth-child(19) { --order: 19; }
+.poem p:nth-child(20) { --order: 20; }
 
 /* Fade-in Keyframes */
 @keyframes fadeIn {
@@ -83,37 +80,6 @@ h1 {
   }
 }
 
-/* Additional Sun & Moon Decorative Elements */
-body::before {
-  content: '🌞';
-  font-size: 4rem;
-  color: #FFD700;
-  position: absolute;
-  top: -20px;
-  left: 5%;
-  animation: float 6s infinite alternate ease-in-out;
-  opacity: 0.7;
-}
-
-body::after {
-  content: '🌙';
-  font-size: 4rem;
-  color: #B0C4DE;
-  position: absolute;
-  bottom: -20px;
-  right: 5%;
-  animation: float 5s infinite alternate ease-in-out;
-  opacity: 0.7;
-}
-
-@keyframes float {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(15px);
-  }
-}
 
 
 
